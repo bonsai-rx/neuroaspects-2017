@@ -1,0 +1,36 @@
+title: Aspects of Bonsai 2017
+description: Bonsai workshop for Aspects of Neuroscience 2017.
+google_analytics:
+theme: minima
+baseurl: "/neuroaspects-2017"
+
+twitter_username: bonsai_rx
+github_username:  bonsai-rx
+
+plugins:
+  - jekyll-seo-tag
+
+include:
+  - _pages
+  - _slides
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "**README.md"
+
+header_pages:
+  - _pages/slides.md
+  - _pages/worksheets.md
+
+collections:
+  # Ideally we would use collections for slides but this
+  # breaks reveal.js markdown processing because of issue:
+  # https://github.com/jekyll/jekyll/issues/6209
+  # slides:
+  #   output: true
+  #   permalink: /:collection/:path/
+  
+  worksheets:
+    output: true
+    permalink: /:collection/:path/
